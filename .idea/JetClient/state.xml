@@ -25,9 +25,68 @@
               <option name="name" value="Draft" />
               <option name="url" value="http://localhost:5050/notes" />
             </requestState>
+            <requestState>
+              <option name="id" value="43b1952b-1b93-4417-966b-49cd64225773" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft 1" />
+            </requestState>
           </list>
         </option>
       </draftsState>
+    </option>
+    <option name="environmentGroups">
+      <list>
+        <environmentGroupState>
+          <option name="environments">
+            <list>
+              <environmentState>
+                <option name="id" value="new_environment" />
+                <option name="name" value="New Environment" />
+              </environmentState>
+            </list>
+          </option>
+          <option name="id" value="notes_api_test" />
+          <option name="name" value="notes-api-test" />
+        </environmentGroupState>
+      </list>
+    </option>
+    <option name="folders">
+      <list>
+        <folderState>
+          <option name="id" value="872b2ed6-77b9-4881-a829-c73eb3baf367" />
+          <option name="name" value="notes-api" />
+          <option name="requests">
+            <list>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;title&quot;: &quot;title_Zq09&quot;,&#10;  &quot;tags&quot;: [&#10;    &quot;tags_zL07&quot;,&#10;    &quot;tags_tC93&quot;,&#10;    &quot;tags_ZI39&quot;&#10;  ],&#10;  &quot;body&quot;: &quot;body_Xb92&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="89ed1236-95dc-4979-a3d6-4bbd6705c499" />
+                <option name="method" value="POST" />
+                <option name="name" value="New Request" />
+                <option name="url" value="http://108.137.3.170:5000" />
+              </requestState>
+            </list>
+          </option>
+          <option name="sortWeight" value="1000000" />
+          <option name="syncProperties">
+            <synchronizationPropertiesState>
+              <option name="folderPath" value="C:\Users\Aiken\source-code\WebstormProjects\project-dicoding\notes-app-back-end\.jetclient" />
+            </synchronizationPropertiesState>
+          </option>
+        </folderState>
+      </list>
     </option>
     <option name="id" value="cee36aea-fedc-4520-b1bd-8f95e1bd6960" />
   </component>
