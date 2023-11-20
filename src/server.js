@@ -1,15 +1,20 @@
 import Hapi from '@hapi/hapi';
+import dotenv from 'dotenv';
 
 import notes from './api/notes/index.js';
 import NotesServices from './services/inMemory/NotesServices.js';
-import NotesValidator from "./validator/notes/index.js";
+import NotesValidator from './validator/notes/index.js';
+
+dotenv.config();
 
 const init = async () => {
   const server = Hapi.server({
-    host: process.env.NODE_ENV !== 'production' ? 'localhost' : '0.0.0.0',
-    port: 3000,
+    host: process.env.HOST,
+    port: process.env.PORT,
     routes: {
-      cors: true,
+      cors: {
+        origin: ['*'],
+      },
     },
   });
 
