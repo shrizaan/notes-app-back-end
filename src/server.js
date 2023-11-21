@@ -1,9 +1,9 @@
-import Hapi from '@hapi/hapi';
-import dotenv from 'dotenv';
+const Hapi = require('@hapi/hapi');
+const dotenv = require('dotenv');
 
-import notes from './api/notes/index.js';
-import NotesServices from './services/inMemory/NotesServices.js';
-import NotesValidator from './validator/notes/index.js';
+const notes = require('./api/notes/index.js');
+const NotesServices = require('./services/postgres/NotesServices.js');
+const NotesValidator = require('./validator/notes/index.js');
 
 dotenv.config();
 
@@ -18,6 +18,7 @@ const init = async () => {
     },
   });
 
+  // Services
   const notesService = new NotesServices();
 
   await server.register({
