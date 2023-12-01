@@ -8,15 +8,7 @@ const NotFoundError = require('../../exceptions/NotFoundError');
 
 class NotesServices {
   constructor() {
-    this._pool = new Pool(
-      {
-        user: 'postgres',
-        host: 'database-test1.cuduw6sekgvf.ap-southeast-3.rds.amazonaws.com',
-        database: 'notesapp',
-        password: 'aikendev',
-        port: 5432,
-      },
-    );
+    this._pool = new Pool();
   }
 
   async addNote({ title, body, tags }) {
