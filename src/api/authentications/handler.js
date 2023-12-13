@@ -21,7 +21,7 @@ class AuthenticationsHandler {
       
       await this._authenticationsService.addRefreshToken(refreshToken);
       
-      const resposne = h.response({
+      const response = h.response({
         status: 'success',
         message: 'Authentication berhasil ditambahkan',
         data: {
@@ -29,8 +29,8 @@ class AuthenticationsHandler {
           refreshToken,
         },
       });
-      resposne.code(201);
-      return resposne;
+      response.code(201);
+      return response;
     } catch (error) {
       if (error instanceof ClientError) {
         const response = h.response({
