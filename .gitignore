@@ -1,5 +1,2 @@
-/node_modules
-notes-api-webserver.pem
-ec2-database-connect.pem
+node_modules
 .env
-.prod.env

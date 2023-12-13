@@ -1,21 +1,30 @@
+/* eslint-disable camelcase */
+
 exports.shorthands = undefined;
 
 exports.up = (pgm) => {
-  pgm.createTable('users', {
+  pgm.createTable('notes', {
     id: {
       type: 'VARCHAR(50)',
       primaryKey: true,
     },
-    username: {
-      type: 'VARCHAR(50)',
-      notNull: true,
-      unique: true,
-    },
-    password: {
+    title: {
       type: 'TEXT',
       notNull: true,
     },
-    fullname: {
+    body: {
+      type: 'TEXT',
+      notNull: true,
+    },
+    tags: {
+      type: 'TEXT[]',
+      notNull: true,
+    },
+    created_at: {
+      type: 'TEXT',
+      notNull: true,
+    },
+    updated_at: {
       type: 'TEXT',
       notNull: true,
     },
@@ -23,5 +32,5 @@ exports.up = (pgm) => {
 };
 
 exports.down = (pgm) => {
-  pgm.dropTable('users');
+  pgm.dropTable('notes');
 };

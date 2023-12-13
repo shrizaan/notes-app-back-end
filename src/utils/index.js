@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 const mapDBToModel = ({
   id,
   title,
@@ -12,7 +11,7 @@ const mapDBToModel = ({
   body,
   tags,
   createdAt: created_at,
-  updateAt: updated_at,
+  updatedAt: updated_at,
 });
 
 module.exports = { mapDBToModel };
