@@ -110,18 +110,6 @@ const init = async () => {
       },
     },
   ]);
-  
-  server.route({
-    method: 'POST',
-    path: '/uploads',
-    handler: (request) => ({ message: 'Anda berhasil melakukan request' }),
-    options: {
-      payload: {
-        allow: 'multipart/form-data',
-        multipart: true,
-      },
-    },
-  });
 
   await server.start();
   console.log(`Server berjalan pada ${server.info.uri}`);
