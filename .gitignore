@@ -3,3 +3,5 @@ src/api/uploads/file
 .env
 notes-api-webserver.pem
 aiken-notesapp_accessKeys.csv
+.vscode
+.idea
